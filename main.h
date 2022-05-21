@@ -10,7 +10,7 @@
 
 
 
-/
+/**
 
  * struct flags - struct containing flags to "turn on"
 
@@ -38,7 +38,7 @@ typedef struct flags
 
 
 
-/
+/**
 
  * struct printHandler - struct to choose the right function depending
 
@@ -62,7 +62,7 @@ typedef struct printHandler
 
 
 
-/* printxt_nums */
+/* print_nums */
 
 int print_int(va_list l, flags_t *f);
 
@@ -136,9 +136,9 @@ int print_bigS(va_list l, flags_t *f);
 
 
 
-/* printxt_address */
+/* print_address */
 
-int printxt_address(va_list l, flags_t *f);
+int print_address(va_list l, flags_t *f);
 
 
 
