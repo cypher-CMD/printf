@@ -48,11 +48,11 @@ char *universal_convert(unsigned long int num, int base, int lowercase);
 /* _printf */
 int _printf(const char *format, ...);
 
-/* get_print */
-int (*get_print(char s))(va_list, flags_t *);
+/* pull_print */
+int (*pull_print(char s))(va_list, flags_t *);
 
-/* get_flag */
-int get_flag(char s, flags_t *f);
+/* pull_flag */
+int pull_flag(char s, flags_t *f);
 
 /* print_alpha */
 int print_string(va_list l, flags_t *f);
