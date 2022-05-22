@@ -14,21 +14,21 @@
 
 struct format
 {
-	char *id;
-	int (*func)(va_list);
+char *id;
+int (*func)(va_list);
 };
 
 typedef struct format f_id;
 
-int _printf(const char *format, ...);
+int _printfx(const char *format, ...);
 int _identifier(const char *format, f_id func_list[], va_list args);
-int _putchar(char c);
-int _putstr(va_list);
-int _print_char(va_list arg);
+int _putcharacter(char c);
+int _putstrng(va_list);
+int _print_character(va_list arg);
 int _print_percent(va_list arg);
 int printtxt_nums(int n);
 int _print_int(va_list arg);
-int int_length(unsigned int n);
+int int_lenght(unsigned int n);
 int get_exponent(int len);
 int _print_binary(va_list);
 int binary_len(unsigned int n);
