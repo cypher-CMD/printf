@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * int_length - gets the lenght of a number
+ * int_lenght - gets the lenght of a number
  * @n: param
  * Return: int
  */
 
-int int_length(unsigned int n)
+int int_lenght(unsigned int n)
 {
 int count;
 
