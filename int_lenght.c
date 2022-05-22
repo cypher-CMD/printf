@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * int_lenght - gets the lenght of a number
+ * int_length - gets the lenght of a number
  * @n: param
  * Return: int
  */
 
-int int_lenght(unsigned int n)
+int int_length(unsigned int n)
 {
-int count;
+	int count;
 
-for (count = 0; n > 0; count++)
-{
-n = n / 10;
-}
-return (count);
+	for (count = 0; n > 0; count++)
+	{
+		n = n / 10;
+	}
+	return (count);
 }
 
 /**
@@ -24,11 +24,11 @@ return (count);
  */
 int get_exponent(int len)
 {
-int exponent;
+	int exponent;
 
-for (exponent = 1; len > 1; len--)
-exponent = exponent * 10;
-return (exponent);
+	for (exponent = 1; len > 1; len--)
+		exponent = exponent * 10;
+	return (exponent);
 }
 
 /**
@@ -39,11 +39,11 @@ return (exponent);
 
 int binary_len(unsigned int n)
 {
-int len;
+	int len;
 
-for (len = 0; n > 0; len++)
-{
-n = n / 2;
-}
-return (len);
+	for (len = 0; n > 0; len++)
+	{
+		n = n / 2;
+	}
+	return (len);
 }
