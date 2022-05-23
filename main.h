@@ -53,6 +53,7 @@ typedef struct flags
 typedef struct printHandler
 
 {
+<<<<<<< HEAD
 
     char c;
 
@@ -151,3 +152,27 @@ int print_percent(va_list l, flags_t *f);
 
 
 #endif
+=======
+	char *id;
+	int (*func)(va_list);
+};
+
+typedef struct format f_id;
+
+int _printf(const char *format, ...);
+int _identifier(const char *format, f_id func_list[], va_list args);
+int _putchar(char c);
+int _putstr(va_list);
+int _print_char(va_list arg);
+int _print_percent(va_list arg);
+int print_number(int n);
+int _print_int(va_list arg);
+int int_length(unsigned int n);
+int get_exponent(int len);
+int _print_binary(va_list);
+int binary_len(unsigned int n);
+char *rev_string(char *);
+void _putbase(char *str);
+char *_cpymem(char *dest, char *src, unsigned int n);
+#endif
+>>>>>>> fe44354a4f924a43674f9319f5b2fcaa80823455
