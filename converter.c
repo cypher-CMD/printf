@@ -16,7 +16,7 @@
 
  */
 
-char *universal_convert(unsigned long int num, int base, int lowercase)
+char *convert(unsigned long int num, int base, int lowercase)
 
 {
 
